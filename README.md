@@ -9,3 +9,24 @@
 8) Consider your data model. What objects will you be using? What are the key/value pairs? What arrays do you need? What needs to live in local storage?
 9) Consider what features _depend_ on what other features. Use this dependency logic to figure out what order to complete tasks.
 
+## HTML Setup
+- three radio buttons
+    - name, id, value, blank img tag
+- catch pokemon button
+
+## JS 
+- grab DOM elements with query selector
+- TDD below functions
+- inital random pokemon (three)
+    -  get pokedex data (generate pokedex?) from local storage
+    - function to generate three random pokemon
+    - will need to use while loop
+- On page load, increment encounter
+    - encounter pokemon function
+- On click
+    - increment capture
+        - capture pokemon function
+        - set updated pokedex to local storage
+    - render new pokemon
+
+
