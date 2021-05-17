@@ -1,6 +1,10 @@
-// import functions and grab DOM elements
+// import functions and data
+import pokemonIndex from './data/pokemon.js';
+import { catchPokemon, seePokemon } from './local-storage-utils.js';
+import { getRandomPokemon, renderThreePokemon } from './utils.js';
 
-// initialize state
+//grad DOM elements
+const pokeBall = document.querySelector()
 
 // set event listeners 
   // get user input

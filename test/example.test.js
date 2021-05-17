@@ -52,33 +52,36 @@ test('time to test a function', (expect) => {
 });
 
 //getPokedex test
-test('time to test a function', (expect) => {
+test('Pulls stringified data from local storage| if data does not exist, creates empty array| parses data| returns parsed data', (expect) => {
     //Arrange
     // Set up your arguments and expectations
-    const expected = true;
+    const expected = 'object';
     
     //Act 
     // Call the function you're testing and set the result to a const
-    const actual = true;
+    const actual = getPokedex();
 
     //Expect
     // Make assertions about what is expected versus the actual result
-    expect.equal(actual, expected);
+    expect.equal(typeof actual, expected);
 });
 
 //setPokeDex test
-test('time to test a function', (expect) => {
+const newPokeDex = getPokedex();
+test(' takes in a new pokedex, stringifies new pokedex and sets it in local storage', (expect) => {
     //Arrange
     // Set up your arguments and expectations
-    const expected = true;
+    const expected = toString(newPokeDex);
     
     //Act 
     // Call the function you're testing and set the result to a const
-    const actual = true;
+    
+    const actual = setPokeDex(newPokeDex);
+    
 
     //Expect
     // Make assertions about what is expected versus the actual result
-    expect.equal(actual, expected);
+    expect.equal(typeof actual, expected);
 });
 
 //catchPokemon test
