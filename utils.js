@@ -1,4 +1,5 @@
 export { findById, getRandomPokemon, renderThreePokemon };
+import pokemonIndex from './data/pokemon.js';
 
 function findById(someArray, someId) {
     const numberId = +(someId);
@@ -12,7 +13,11 @@ function findById(someArray, someId) {
 
 //Should select a random pokemon from raw data array using Math.random
 function getRandomPokemon() {
+    const randomIndexData = Math.floor(Math.random() * pokemonIndex.length);
 
+    const randomPokemon = pokemonIndex[randomIndexData];
+
+    return randomPokemon;
 }
 
 
