@@ -1,6 +1,9 @@
 // IMPORT MODULES under test here:
 // import { example } from '../example.js';
 
+import { findById, getRandomPokemon, renderThreePokemon }from '../utils.js';
+import { getPokedex, setPokeDex, catchPokemon, seePokemon } from '../local-storage-utils.js';
+
 const test = QUnit.test;
 
 test('time to test a function', (expect) => {
@@ -16,3 +19,5 @@ test('time to test a function', (expect) => {
     // Make assertions about what is expected versus the actual result
     expect.equal(actual, expected);
 });
+
+//
