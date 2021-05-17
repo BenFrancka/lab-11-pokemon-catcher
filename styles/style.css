@@ -21,18 +21,28 @@ body {
     font-family: 'Titillium Web', sans-serif;
     background-color: var(--color2);
 }
-
+body {
+    background-color: rgba(64, 224, 208, 0.137);
+}
 main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: calc(var(--footer-height));
+}
+
+h1 {
+    font-size: 4rem;
+    background-color: red;
+    color: whitesmoke;
+    margin-bottom: 20px;
+    border: solid black 3px;
+    border-radius: 25%;
 }
 
 .pokemon-img {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
 }
 
 button {
