@@ -70,3 +70,7 @@ input:checked + img {
     border-radius: 50%;
 }
 
+canvas {
+    max-height: 500px;
+    max-width: auto;
+}
