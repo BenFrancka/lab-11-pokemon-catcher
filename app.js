@@ -13,6 +13,8 @@ const image1 = document.querySelector('#pokemon-img-1');
 const image2 = document.querySelector('#pokemon-img-2');
 const image3 = document.querySelector('#pokemon-img-3');
 
+
+
 //declare renderThreePokemon function for use in event listener
 //Should generate three random, not matching,  pokemon
 function renderThreePokemon() {
@@ -21,6 +23,7 @@ function renderThreePokemon() {
     let pokemon1 = getRandomPokemon();
     let pokemon2 = getRandomPokemon();
     let pokemon3 = getRandomPokemon();
+
 
   //while loop to check if any of the pokemon are the same    
     while (
@@ -43,11 +46,15 @@ function renderThreePokemon() {
     image2.src = pokemon2.url_image;
     image3.src = pokemon3.url_image;
 
+
   //assign values to radio inputs
     selection1.value = pokemon1.id;
     selection2.value = pokemon2.id;
     selection3.value = pokemon3.id;
 }
+
+//call render three pokemon to initialize state
+renderThreePokemon();
 
 // set event listener for pokeball
 pokeBall.addEventListener('click', () => {
