@@ -3,7 +3,7 @@
 
 import { getRandomPokemon } from '../utils.js';
 //import { renderThreePokemon } from '../app.js';
-import { getPokedex, setPokeDex, /*catchPokemon, seePokemon*/ } from '../local-storage-utils.js';
+import { getPokedex, /*setPokeDex, catchPokemon, seePokemon*/ } from '../local-storage-utils.js';
 //import pokemonIndex from '../data/pokemon.js';
 
 const test = QUnit.test;
@@ -68,7 +68,7 @@ test('Pulls stringified data from local storage| if data does not exist, creates
 });
 
 //setPokeDex test
-const newPokeDex = getPokedex();
+/*const newPokeDex = getPokedex();
 test(' takes in a new pokedex, stringifies new pokedex and sets it in local storage', (expect) => {
     //Arrange
     // Set up your arguments and expectations
@@ -83,7 +83,7 @@ test(' takes in a new pokedex, stringifies new pokedex and sets it in local stor
     //Expect
     // Make assertions about what is expected versus the actual result
     expect.equal(typeof actual, expected);
-});
+});*/
 
 //catchPokemon test
 test('time to test a function', (expect) => {
