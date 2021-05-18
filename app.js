@@ -1,6 +1,6 @@
 export { renderThreePokemon };
 // import functions and data
-import pokemonIndex from './data/pokemon.js';
+//import pokemonIndex from './data/pokemon.js';
 import { catchPokemon, seePokemon } from './local-storage-utils.js';
 import { getRandomPokemon } from './utils.js';
 
