@@ -12,7 +12,7 @@ const type = mungeType(pokeDex);
 const seen = mungeSeen(pokeDex);
 
 //Caught Pokemon Chart
-var caughtChart = new Chart(ctx, {
+new Chart(ctx, {
     type: 'doughnut',
     data: {
         labels: names,
@@ -43,7 +43,7 @@ var caughtChart = new Chart(ctx, {
 var ctx = document.getElementById('seen-chart').getContext('2d');
 
 //encountered pokemon types
-var seenChart = new Chart(ctx, {
+new Chart(ctx, {
     type: 'doughnut',
     data: {
         labels: type,
