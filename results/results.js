@@ -76,6 +76,6 @@ const resetButton = document.querySelector('#reset-button');
 
 //create event listener to reset local storage and return to home page
 resetButton.addEventListener('click', () => {
-    window.location.replace('/index.html');
+    window.location.replace('/');
     setPokeDex([]);
 });
