@@ -1,5 +1,6 @@
 export { findById, getRandomPokemon, renderThreePokemon };
 import pokemonIndex from './data/pokemon.js';
+import { seePokemon } from './local-storage-utils.js';
 
 function findById(someArray, someId) {
     const numberId = +(someId);
@@ -21,15 +22,3 @@ function getRandomPokemon() {
 }
 
 
-//Should generate three random, not matching,  pokemon
-function renderThreePokemon() {
-
-
-    //while loop to check if any of the pokemon are the same    
-
-    //increment pokemon "seen" state 
-
-    //render pokemon images
-
-    //assign values to radio inputs
-}

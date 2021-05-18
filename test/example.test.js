@@ -1,7 +1,8 @@
 // IMPORT MODULES under test here:
 // import { example } from '../example.js';
 
-import { findById, getRandomPokemon, renderThreePokemon }from '../utils.js';
+import { getRandomPokemon }from '../utils.js';
+import { renderThreePokemon } from '../app.js';
 import { getPokedex, setPokeDex, catchPokemon, seePokemon } from '../local-storage-utils.js';
 import  pokemonIndex  from '../data/pokemon.js';
 
