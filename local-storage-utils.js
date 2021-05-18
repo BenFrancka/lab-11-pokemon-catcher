@@ -1,4 +1,4 @@
-export { getPokedex, setPokeDex, catchPokemon, seePokemon };
+export { getPokedex, setPokeDex, catchPokemon, seePokemon, caughtTotal };
 import { findById } from './utils.js';
 
 const POKEDEX = 'POKEDEX';
@@ -37,7 +37,7 @@ function catchPokemon(selectedPokemon) {
     setPokeDex(pokeDex);
 }
 
-
+//increments the seen number, or if selectedPokemon has not been encountered, creates a new local storage object with a seen number of 1
 function seePokemon(selectedPokemon) {
     const pokeDex = getPokedex();
 
@@ -54,4 +54,14 @@ function seePokemon(selectedPokemon) {
         pokeDex.push(newPokemon);
     }
     setPokeDex(pokeDex);
+}
+
+function caughtTotal() {
+    let total = 0;
+    const pokeDex = getPokedex();
+
+    for (let pokemon of pokeDex) {
+        total += pokemon.caught;
+    }
+    return total;
 }

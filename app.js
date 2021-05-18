@@ -1,7 +1,7 @@
 export { renderThreePokemon };
 // import functions and data
 //import pokemonIndex from './data/pokemon.js';
-import { catchPokemon, seePokemon } from './local-storage-utils.js';
+import { catchPokemon, seePokemon, caughtTotal } from './local-storage-utils.js';
 import { getRandomPokemon } from './utils.js';
 
 //grad DOM elements
@@ -66,9 +66,19 @@ pokeBall.addEventListener('click', () => {
     //catch the pokemon with catchPokemon function
     catchPokemon(caughtPokemon);
 
+  //declare total captured number
+    const caught = caughtTotal();
+
+ //if statement that checks if total caught is equal to ten
+  //if so, redirect to results page
+    if (caught >= 10) {
+        window.location.replace('../results/index.html');
+    }
+ 
     //upate the state 
     renderThreePokemon();
 });
+
 
 
 

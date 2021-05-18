@@ -38,6 +38,7 @@ h1 {
     margin-bottom: 20px;
     border: solid black 3px;
     border-radius: 25%;
+    text-align: center;
 }
 
 .pokemon-img {
@@ -53,4 +54,18 @@ button {
     color: whitesmoke;
     background-color: red;
     border: outset black 5px;
+}
+
+.reset-button {
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    display: none;
+}
+
+input:checked + img {
+    border: 8px solid red;
+    border-radius: 50%;
 }

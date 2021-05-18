@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/home.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.2.1/dist/chart.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>
+            Did you catch 'em all? (Pokemon Caught Chart)
+        </h1>
+    </header>
+    <!--caught pokemon chart-->
+    <canvas id="caught-chart" width="400" height="400"></canvas>
+
+    <header>
+        <h1>
+            What's your type? (Types of Pokemon Seen)
+        </h1>
+    </header>
+    <!--types of pokemon seen chart-->
+    <canvas id="seen-chart" width="400" height="400"></canvas>
+
+    <div class= "reset-button">
+        <button id= "reset-button">Leave PokeCenter</button>
+    </div>
+    
+
+    <script type="module" src="./results.js"></script>
+</body>
+
+</html>
