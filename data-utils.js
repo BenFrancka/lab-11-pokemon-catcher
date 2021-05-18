@@ -17,3 +17,13 @@ export function mungeNames(pokemonArray) {
     }
     return nameResults;
 }
+
+export function mungeColors(pokemonArray) {
+    const colorResults = [];
+
+    for (let pokemon of pokemonArray) {
+        const colorData = findById(pokeDex, pokemon.id);
+        colorResults.push(colorData.color_1);
+    }
+    return colorResults;
+}

@@ -38,6 +38,7 @@ h1 {
     margin-bottom: 20px;
     border: solid black 3px;
     border-radius: 25%;
+    text-align: center;
 }
 
 .pokemon-img {
@@ -54,3 +55,4 @@ button {
     background-color: red;
     border: outset black 5px;
 }
+
