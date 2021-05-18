@@ -37,7 +37,7 @@ function catchPokemon(selectedPokemon) {
     setPokeDex(pokeDex);
 }
 
-
+//increments the seen number, or if selectedPokemon has not been encountered, creates a new local storage object with a seen number of 1
 function seePokemon(selectedPokemon) {
     const pokeDex = getPokedex();
 
