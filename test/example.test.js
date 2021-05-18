@@ -179,3 +179,19 @@ test('increments the seen number in a pokemon object, or creates a new object wi
     // Make assertions about what is expected versus the actual result
     expect.deepEqual(pokemon, seenPokemon);
 });
+
+////////////////////////////////////////////////////////////////////////////////
+//mungeCaught test
+test('munges caught data and returns it in an array', (expect) => {
+    //Arrange
+    // Set up your arguments and expectations
+    const expected = true;
+    
+    //Act 
+    // Call the function you're testing and set the result to a const
+    const actual = true;
+
+    //Expect
+    // Make assertions about what is expected versus the actual result
+    expect.equal(actual, expected);
+});
