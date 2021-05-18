@@ -50,9 +50,18 @@ function renderThreePokemon() {
 }
 
 // set event listener for pokeball
+pokeBall.addEventListener('click', () => {
+
+  //user input from radio buttons
+    const selectedPokemon = document.querySelector(':checked');
+    const caughtPokemon = selectedPokemon.value;
+
+    //catch the pokemon with catchPokemon function
+    catchPokemon(caughtPokemon);
+
+    //upate the state 
+    renderThreePokemon();
+});
 
 
 
-  // get user input
-  // use user input to update state 
-  // update DOM to reflect the new state

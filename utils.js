@@ -1,6 +1,5 @@
-export { findById, getRandomPokemon, renderThreePokemon };
+export { findById, getRandomPokemon };
 import pokemonIndex from './data/pokemon.js';
-import { seePokemon } from './local-storage-utils.js';
 
 function findById(someArray, someId) {
     const numberId = +(someId);
