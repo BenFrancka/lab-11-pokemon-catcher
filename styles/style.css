@@ -60,3 +60,12 @@ button {
     display: flex;
     justify-content: center;
 }
+
+input {
+    display: none;
+}
+
+input:checked + img {
+    border: 8px solid red;
+    border-radius: 50%;
+}
