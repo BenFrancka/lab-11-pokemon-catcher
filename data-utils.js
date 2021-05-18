@@ -27,3 +27,21 @@ export function mungeColors(pokemonArray) {
     }
     return colorResults;
 }
+
+export function mungeType(pokemonArray) {
+    const typeResults = [];
+
+    for (let pokemon of pokemonArray) {
+        const typeData = findById(pokeDex, pokemon.id);
+        typeResults.push(typeData.type_1);
+    }
+    return typeResults;
+}
+
+export function mungeSeen(pokemonArray) {
+    const seenResults = [];
+    for (let pokemon of pokemonArray) {
+        seenResults.push(pokemon.seen);
+    }
+    return seenResults;
+}
