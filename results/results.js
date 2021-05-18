@@ -1,5 +1,5 @@
 import { mungeCaught, mungeNames, mungeColors, mungeType, mungeSeen } from '../data-utils.js';
-import { getPokedex } from '../local-storage-utils.js';
+import { getPokedex, setPokeDex } from '../local-storage-utils.js';
 
 var ctx = document.getElementById('caught-chart').getContext('2d');
 
@@ -69,4 +69,13 @@ new Chart(ctx, {
             }
         }
     }
+});
+
+//grab button element from HTML for reset event
+const resetButton = document.querySelector('#reset-button');
+
+//create event listener to reset local storage and return to home page
+resetButton.addEventListener('click', () => {
+    window.location.replace('../index.html');
+    setPokeDex([]);
 });

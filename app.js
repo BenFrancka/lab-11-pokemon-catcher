@@ -68,11 +68,11 @@ pokeBall.addEventListener('click', () => {
 
   //declare total captured number
     const caught = caughtTotal();
-    
+
  //if statement that checks if total caught is equal to ten
   //if so, redirect to results page
     if (caught >= 10) {
-        window.location.replace('./results/results.js');
+        window.location.replace('../results/index.html');
     }
  
     //upate the state 
