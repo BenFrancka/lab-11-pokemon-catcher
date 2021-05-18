@@ -3,7 +3,7 @@
 
 import { getRandomPokemon } from '../utils.js';
 
-import { getPokedex, setPokeDex, catchPokemon, seePokemon } from '../local-storage-utils.js';
+import { getPokedex, setPokeDex, /*catchPokemon, seePokemon*/ } from '../local-storage-utils.js';
 //import { renderThreePokemon } from '../app.js';
 //import pokemonIndex from '../data/pokemon.js';
 

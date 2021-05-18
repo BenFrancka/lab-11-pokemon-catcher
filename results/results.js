@@ -40,10 +40,10 @@ new Chart(ctx, {
     }
 });
 
-var ctx = document.getElementById('seen-chart').getContext('2d');
+var ctx2 = document.getElementById('seen-chart').getContext('2d');
 
 //encountered pokemon types
-new Chart(ctx, {
+new Chart(ctx2, {
     type: 'doughnut',
     data: {
         labels: type,
