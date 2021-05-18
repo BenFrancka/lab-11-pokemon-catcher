@@ -8,7 +8,7 @@ const pokeDex = getPokedex();
 const names = mungeNames(pokeDex);
 const caught = mungeCaught(pokeDex);
 
-var caughtChart = new Chart(ctx, {
+new Chart(ctx, {
     type: 'bar',
     data: {
         labels: names,
